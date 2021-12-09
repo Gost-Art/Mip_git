@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{coursepaper}
+\documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -32,9 +32,9 @@
 
 
 \begin{abstract}
-Odborný článok na tému "Implementácia a využívanie modelov Počítačoveho videnia v praxi " pozostáva z 4 kapitol. Prvá kapitola je venovaná používaniu počítačoveho videnia s využitím programovacích jazykov ako Python a C++ a knižnice OpenCV.Druhá kapitola je venovaná druhom a trénovaniu modelov počítačoveho videnia.Tretia kapitola je venovaná výhodam a nevýhodám počítačoveho videnia. Obsahom štvrtej kapitoli je využitie počítačoveho videnia v praxi. 
+Odborný článok na tému " Implementácia a využívanie modelov Počítačoveho videnia v praxi " pozostáva z 4 kapitol. Prvá kapitola je venovaná používaniu počítačoveho videnia s využitím programovacích jazykov ako Python a C++ a knižnice OpenCV.Druhá kapitola je venovaná druhom a trénovaniu modelov počítačoveho videnia.Tretia kapitola je venovaná výhodam a nevýhodám počítačoveho videnia. Obsahom štvrtej kapitoli je využitie počítačoveho videnia v praxi. 
 \end{abstract}
-
+\textbf{Computer Vision,OpenCV,Python,Computer Vision Models,Object Segmentation,Image Classification,Image Detection}
 \section{Počítačové videnie}
 Počítačové videnie je automatizovaná extrakcia informácií z obrázkov.Informáciu može predstavovať hocičo od 3D modelov,videa alebo obrázka.Niekedy sa počítačové videnie snaží napodobňovať ľudské videnie, inokedy využíva dáta alebo štatistiky.Praktické počítačove videnie je mix programovania,modelovania a matematiky.Matematická časť pomáha pochopiť špecifické algoritmy,k toré sú používané.
 
@@ -66,7 +66,7 @@ OpenCV je  open-source knižnica napísaná v C++ ,ktorá obsahuje algoritmy a f
 
 	\end{enumerate}
 \end{itemize}
-
+\includegraphics[scale=0.75]{diagram.png}
 \section{Modely a ich trénovanie} \label{nejaka}
 
 \subsection{Typy modelov} \label{ina:nejako}
@@ -76,7 +76,7 @@ Rôzne typy modelov nám pomáhajú riešiť rôzne typy problémov.Aké predmet
 
 Detekcia objektov: Používa sa, keď je doležitá poloha objektu.Vracia množstvo súradníc nazývaných ohraničujúci rámček.Príklad takéhoto modelu može byť model na detekciu osôb(AlwaysAI/mobilenet).
 
-Segmentácia obrazu: Keď je dôležitý presný tvar objektu využijeme segmentáciu obrazu.Pre presnú segmentáciu klasifikuje každý pixel.
+Segmentácia obrazu: Keď je dôležitý presný tvar objektu využijeme segmentáciu obrazu.Pre presnú segmentáciu klasifikuje každý pixel.\cite{Object-identification}
 
  Detekcia orientačných bodov: Využíva sa na určenie dôležitých bodov,ktoré zachytávajú dôležite prvky objektu.Môžme použiť model na odhad pózy(AlwaysAl/human-pose).
 \cite{CV-framework}
@@ -100,9 +100,8 @@ Testovacia aplikácia: Po vytvorení modelu na ňom otestujeme aj nové údaje, 
 \includegraphics[scale=1]{tabulka.png}
 \includegraphics[scale=0.5]{civava_vs_muffin.jpeg}
 \cite{Conditional-Probability}
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
 
+\centering
 
 
 
@@ -113,6 +112,7 @@ Ako každá iná technologia aj počítačové videnie má svoje výhody a nevý
 	\begin{itemize}
 	\item ľudské videnie: zdroj obrazu → oko → kognitívny systém
 	\item počítačové videnie: zdroj obrazu → kamera → počítač
+	\cite{CV-TUKE}
 	\end{itemize}
 \end{itemize}
 
@@ -141,10 +141,21 @@ Ako každá iná technologia aj počítačové videnie má svoje výhody a nevý
 
 \section{Využitie počítačového videnia}
 Počitačové videnie sa dnes využíva v každom odvetvý informačných technológii na svete. Jeho najväčšie využitie je v priemysle kde dokáže efektívne kontrolovať kvalitu produktov , alebo v zdravotníctve kde zachraňuje množstvo životou kontrolou a identifikáciou problémov. Využitie má aj v rekreacií kde slúži ako zábava pre programátorov alebo nadšendov drovo , ktoré sú často využívané pri amatérkej práci s počitačovým videním . \cite{CV-inspection-system} 
-\includegraphics[scale=0.75]{defect_detection.png}
+\includegraphics[scale=0.85]{defect_detection.png}
 \cite{inspection-in-manufacturing}
-\section{Záver} \label{zaver} % prípadne iný variant názvu
 
+\section{Reakcia na témy}
+\paragraph{Spoločenské súvislosti}
+V prednáške s pánom Dekanom sme sa dozvedeli množstvo zaujimavých a dôležitých veci pre nás ako budúcich inžinierov. Ukázal nám súvislosti medzi školou ,budúcim zamestnaním a svetom. Zaroveň ma donútil sa zamyslieť čo možem priniesť ako budúci inžinier pre svet IT a svet všeobecne, keďže je dnes všetko prepojené.
+\paragraph{Historické súvislosti}
+História je dôležitá pre každú oblasť, aj pre informatiku. Pre nami tu boli ľudia ktorý ovplyvnili historiu informatiky v značnej miere. objav Billieho Englisha pol podľa môjho názoru najväčší, pretože bez myši si ja osobne neviem predstaviť prácu s počítačom. Avšak obdivujem každého jedného z nich, pretože bez nich by informatika nenapredovala takým tempom.
+\paragraph{Technológia a ludia}
+V dnešnej dobe už množstvo procesov riadiť umelá inteligencia, ale aj tak je potrebné aby ju ovládal niekto ,kto rozumie realizácií a plánovaniu projektov.Pretože za každou uspešnou technológiou stojí skusený a úspešný človek. Nie vždy však jeden človek stačí a preto je lepšie keď máme celý tím ľudí, ktorí maju rozdelené úlohy . Dôležité je mať správny nápad a človeka ktorý dokáže víziu preformovať do reálneho produktu.
+\paragraph{Udržateľnosť a etika}
+V dnešnom svete je množstvo ľudí ktorí si nevážia prácu ostatných, a radi by " ukradli " ich prácu . Avšak proti týmtoľuďom je ťažké sa v dnešnej dobe brániť. Jediné čo podľa môjho názoru možme urobiť je byť každý "hrdím inžinierom", a používať svoje schopnosti a vedomosti.Pretože len tak docelime svoj maximálny osobný rozvoj.Zároveň musíme dbať aj na veci ako produkcia odpadu pri vývoji. Musíme zabezpečiť aby sme svojou prácou svetu prinášali a nie brali.
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+V tomto článku sme sa zamerali na to, ako funguje počítačové videnie a jeho modely. Predstavili sme si základné modely ktoré sa použivajú pri práci s ním. Taktiež sme si predstavili spôsoby ako tieto modely trénujeme a aj to, ako ich využívame v praxy.
 
 
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
